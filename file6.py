@@ -46,9 +46,10 @@ def split_file():
     lines_per_file = 1000
     i = 1
     smallfile = None
-    with open('samples1.csv') as bigfile:
+    with open('samples1.csv', encoding="utf-8") as bigfile:
         for lineno, line in enumerate(bigfile):
             if lineno % lines_per_file == 0:
+                print(line)
                 if smallfile:
                     smallfile.close()
                 small_filename = 'C:\\Users\\ShyamPrasadNedumaran\\Documents\\filereader\\FileFolder\\sample_new{}.csv'.format(i)
