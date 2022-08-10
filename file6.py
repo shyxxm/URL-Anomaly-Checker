@@ -41,7 +41,7 @@ def read_write2(j):
                     file.write("\n")
                     # lock.release()
 
-#Splitting file by 300 lines
+#Splitting file by 1000 lines
 def split_file():
     lines_per_file = 1000
     i = 1
